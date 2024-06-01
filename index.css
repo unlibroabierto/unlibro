@@ -1,0 +1,293 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Georgia', sans-serif !important;
+  color: #333;
+}
+
+.banner {
+  color: black;
+  width: 100%;
+  height: 500px;
+  animation: banner 10s infinite linear alternate;
+  background-size: 100% 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes banner {
+  0%, 25% {
+    background-image: url(./imagenes/banner3.jpg);
+    opacity: 70%;
+  }
+  25%, 50% {
+    background-image: url(./imagenes/banner2.webp);
+    opacity: 70%;
+  }
+  50%, 75% {
+    background-image: url(./imagenes/banner3.jpg);
+    opacity: 70%;
+  }
+  75%, 100% {
+    background-image: url(./imagenes/banner2.webp);
+    opacity: 70%;
+  }
+}
+
+.fondo {
+  position: relative;
+  background-image: url(./imagenes/fondo-prueba.avif);
+  background-size: cover;
+}
+
+.fondo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  color: #555;
+  font-family: 'Georgia', sans-serif !important;
+}
+
+input {
+  border: 1px solid #F39C6B;
+}
+
+.item-sobrenos {
+  width: 70%;
+  margin-left: 200px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#coordinadores {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.coordinador {
+  display: flex;
+  width: 45%;
+  margin-bottom: 20px;
+}
+
+.descripcion, .foto {
+  width: 50%;
+}
+
+.descripcion {
+  padding: 20px;
+}
+
+.foto img {
+  width: 100%;
+  max-height: 300px;
+  border-radius: 8px;
+}
+
+.owl-carousel .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.owl-carousel img {
+  width: 300px;
+  height: 300px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.owl-carousel p {
+  height: 150px;
+  font-size: 16px;
+  color: #333;
+  padding: 15px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin: 0;
+  color: #555 !important;
+  font-family: 'Georgia', sans-serif !important;
+  text-decoration: none !important;
+}
+
+.carousel-inner {
+  text-align: center;
+}
+
+.carousel-item {
+  display: flex;
+  justify-content: space-around;
+}
+
+.carousel-text {
+  width: 30%;
+  background-color: #F4E8C1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#image-carousel .owl-prev,
+#image-carousel .owl-next {
+  position: absolute;
+  top: 20%;
+  font-size: 32px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+#image-carousel .owl-prev {
+  left: -5px;
+}
+
+#image-carousel .owl-next {
+  right: -5px;
+}
+
+h4 {
+  font-weight: 500;
+  color: #E6BEAE;
+  font-family: 'Georgia', sans-serif !important;
+}
+
+
+
+#contactanos {
+  padding-bottom: 50px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container-footer {
+  background-color: #ececec;
+}
+
+.footer {
+  background-color: #f0f0f0;
+  color: #D5C7BC;
+  padding: 0%;
+  margin: 0%;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-top: 30px;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-icons img {
+  width: 30px;
+}
+
+.btn-contact,
+.btn-work {
+  color: #D5C7BC;
+  padding: 10px 20px;
+  margin: 10px 0px 0 0px;
+}
+
+.btn-contact:hover,
+.btn-work:hover {
+  color: #fff;
+  background-color: #F39C6B;
+}
+
+.logoFooter p {
+  font-size: 14px;
+}
+
+.whatsapp-icon {
+  position: fixed;
+  right: 5px;
+  z-index: 1000;
+  transition: top 0.5s;
+}
+.whatsapp-icon img {
+  width: 50px;
+  height: 50px;
+}
+
+@media only screen and (max-width: 767px) {
+
+  .banner {
+    font-size: 14px;
+    height: 400px;
+  }
+
+  .parrafos-contenedor {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .parrafo-container {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .parrafo-1 {
+    color: #333;
+    width: 80%;
+  }
+
+  .item-sobrenos {
+    margin-left: 20px;
+    width: 90%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .coordinador {
+    width: 100%;
+  }
+
+  .descripcion,
+  .foto {
+    width: 100%;
+  }
+
+}
