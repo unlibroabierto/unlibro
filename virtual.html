@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller Un Libro Abierto</title>
+    <link rel="icon" type="image/png" href="./imagenes/banner2.webp">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="./font.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="cursos.css"> 
+   
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="./index.html">Sobre Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="./virtual.html">Cursos</a></li>
+            <li class="nav-item"><a class="nav-link" href="./index.html">Contactanos</a></li>
+          </ul>
+        </div>
+    </nav>
+
+ 
+
+
+<h5>  Por consultas escribir a tallerunlibroabierto@gmail.com </h5>
+
+<div class="container-talleres">
+    <h2>Taller Virtual</h2>
+
+    <div>
+        <p>
+            Lunes de 18:30 a 20:30 a partir de abril.<br><br>
+            Este taller de modalidad virtual está dirigido a personas que quieren escribir y están interesadas en explorar distintos modos de narrar, organizar su material, corregir sus textos, ejercitar la lectura, memoria y la imaginación.<br><br>
+            Se trabajará a partir de la lectura de cuentos, poemas, diarios, fragmentos de novela y de películas para conversar e investigar sobre la forma de un texto y la construcción del narrador, los personajes, el argumento.<br><br>
+            La propuesta de este taller es poner en práctica las consignas y preparar el terreno de la escritura a partir de sus textos. Pueden anotarse tanto quienes no tienen experiencia previa, como los que ya participaron de ediciones anteriores.
+        </p>
+    </div>
+    <div>
+        <img src="./imagenes/taller2.jpg" alt="Imagen 1">
+    </div>
+
+    <h2>Taller Presencial</h2>
+    <div>
+        <p>
+          •Martes de 18:30 a 20:30 en Villa Crespo<br>
+          •Miércoles de 18:30 a 20:30 en la librería caras y caretas, (Junín 365) CABA.<br><br>
+            Este taller está dirigido a personas que quieren escribir y están interesadas en explorar distintos modos de narrar, organizar su material, corregir sus textos, ejercitar la lectura, memoria y la imaginación.<br><br>
+            Se trabajará a partir de la lectura de cuentos, poemas, diarios, fragmentos de novela y de películas para conversar e investigar sobre la forma de un texto y la construcción del narrador, los personajes, el argumento.<br><br>
+            La propuesta de este taller es poner en práctica las consignas y preparar el terreno de la escritura a partir de sus textos. Pueden anotarse tanto quienes no tienen experiencia previa, como los que ya participaron de ediciones anteriores.
+        </p>
+    </div>
+    <div>
+        <img src="./imagenes/taller3.jpg" alt="Imagen 2">
+    </div>
+
+    <h2>Clínica de obras</h2>
+    <div>
+        <p>
+            Pensado para quienes necesitan revisar y continuar trabajando un material en proceso o quieren editar y corregir textos terminados.<br><br>
+            Encuentros de una hora, modalidad virtual.
+        </p>
+        </div>
+        <div>
+        <img src="./imagenes/taller1.jpg" alt="Imagen 3">
+    </div>
+</div>
+
+    <footer id="contactanos" class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <ul class="social-icons">
+                <li><a href="https://www.instagram.com/tallerunlibroabierto?igsh=Y3o0eHQ3ZzN0YTZ6" target="_blank"><img src="./imagenes/icono-insta.jpg" alt="instagram"></a></li>
+                 <br>
+                 <br>
+                <p>tallerunlibroabierto@gmail.com </p>
+              </ul>
+            </div>
+    
+            <div class="logoFooter col-lg-12 text-center">
+              <p>Taller Un Libro Abierto</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <div class="whatsapp-icon">
+        <a href="https://wa.me/3454083631" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+        </a>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+       function centerWhatsAppIcon() {
+              var windowHeight = $(window).height();
+              var iconHeight = $('.whatsapp-icon').outerHeight();
+              var top = (windowHeight - iconHeight) / 2;
+              $('.whatsapp-icon').css('top', top + 'px');
+          }
+
+          centerWhatsAppIcon();
+          $(window).on('scroll resize', function() {
+              centerWhatsAppIcon();
+          });
+    </script>
+</body>
+</html>
